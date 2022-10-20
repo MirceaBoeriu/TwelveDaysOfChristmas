@@ -31,11 +31,6 @@ fn main() {
    day=dayOfChristmas{day: String:: from("twelfth "), gift: String:: from("Twelve drummers drumming")};
    strophe.push(day);
 
-
-
-   //[dayOfChristmas{month: String:: from("first"), gift: String:: from("a partridge in a pear tree")}
-     //             ,{ month: String:: from("second"), gift: String:: from("a partridge in a pear tree"}];
-
   for i in 0..12{
        print!("On the {} day of Christmas, my true love sent to me", &strophe[i].day);
      println!();
