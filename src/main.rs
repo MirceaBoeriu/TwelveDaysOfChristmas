@@ -1,5 +1,5 @@
 fn main() {
-  // let mut vers1 = String:: from("On the #day day of Christmas, my true love sent to me");
+
    struct dayOfChristmas {
       day: String,
       gift: String,
@@ -37,10 +37,24 @@ fn main() {
      //             ,{ month: String:: from("second"), gift: String:: from("a partridge in a pear tree"}];
 
   for i in 0..12{
-       println!("On the {} day of Christmas, my true love sent to me", &strophe[i].day);
-     for j in (0..i).rev(){
-        println!("{}",&strophe[j].gift);
+       print!("On the {} day of Christmas, my true love sent to me", &strophe[i].day);
+     println!();
+     for j in (0..=i).rev(){
+
+        print!("{}",&strophe[j].gift);
+        if j==0 && i==11{
+           print!("!");
+        }
+        else if i!=11 && j==0{
+           print!(".");
+        }
+        else {
+           print!(",");
+        }
+        println!();
+
      }
+     println!();
    }
 
 }
